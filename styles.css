@@ -1,0 +1,80 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/car-background.jpg"); /* Фон главной страницы */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Белый текст для контраста */
+}
+
+/* Стили для шапки */
+header {
+    background: rgba(0, 0, 0, 0.7); /* Затемнение шапки */
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Стили для секций */
+section {
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона для читаемости */
+    display: inline-block;
+    border-radius: 10px;
+}
+
+/* Галерея */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Отступы между картинками */
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 300px; /* Размер изображений */
+    height: auto;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень */
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Стили для контактов */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-info {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Логотип */
+.logo {
+    width: 150px; /* Размер логотипа */
+    margin-top: 20px;
+}
